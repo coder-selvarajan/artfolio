@@ -1,2 +1,2 @@
 # artfolio
-React base art gallery siet
+React based art gallery website

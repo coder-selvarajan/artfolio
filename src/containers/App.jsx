@@ -1,64 +1,134 @@
+import { useState } from "react";
+import { makeStyles } from "@material-ui/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
-import BubbleChart from "@material-ui/icons/BubbleChart";
 import Container from "@material-ui/core/Container";
-import Stack from "@material-ui/core/Stack";
+import Toolbar from "@material-ui/core/Toolbar";
+import Box from "@material-ui/core/Box";
+import ImageList from "@material-ui/core/ImageList";
+import ImageListItem from "@material-ui/core/ImageListItem";
+import stlogo from "../assets/st-logo.png";
+import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import { picsDB } from "../data/constants";
+import { MicRounded } from "@material-ui/icons";
+
+const sections = [
+  { title: "All Artworks", key: "all" },
+  { title: "Pencil", key: "pencil" },
+  { title: "Color Pencil", key: "colorpencil" },
+  // { title: "Charcoal", key: "charcoal" },
+  // { title: "Pen", key: "pen" },
+  { title: "Watercolor", key: "watercolor" },
+  { title: "Coffee Art", key: "coffee" },
+  // { title: "Acrylic", url: "#" },
+  // { title: "Oil Pastel", url: "#" },
+  { title: "Soft Pastel", key: "softpastel" },
+];
+
+const useStyles = makeStyles((theme) => ({
+  toolbar: {
+    borderBottom: `1px solid silver`,
+  },
+  toolbarSecondary: {
+    justifyContent: "space-between",
+    overflowX: "auto",
+  },
+  toolbarLink: {
+    padding: 2,
+    flexShrink: 0,
+  },
+}));
 
 function App() {
+  const classes = useStyles();
+  const title = "Artfolio";
+
+  const [filteredPics, setFilteredPics] = useState(picsDB);
+
+  const handleFilterClick = (cat) => {
+    if (cat.toLowerCase().startsWith("all")) {
+      setFilteredPics(picsDB);
+      return;
+    }
+    setFilteredPics(
+      picsDB.filter((item) => item.category.indexOf(cat.toLowerCase()) > -1)
+    );
+  };
+
   return (
     <>
-      <Container maxWidth='xl'>
-        <div>
-          <Stack direction='row' spacing={1}>
-            <Typography color='default' variant='h4' marginRight={100}>
-              ST Artfolio
-            </Typography>
-            <Button
-              startIcon={<BubbleChart />}
-              variant='contained'
-              size='large'
-              color='primary'>
-              All Arts
-            </Button>
-
-            <Button variant='contained' size='small' color='primary'>
-              Pencil
-            </Button>
-            <Button variant='contained' size='small' color='primary'>
-              Color pencil
-            </Button>
-            <Button variant='contained' size='small' color='primary'>
-              Watercolor
-            </Button>
-            <Button variant='contained' size='small' color='primary'>
-              Acrylic
-            </Button>
-          </Stack>
-        </div>
-
-        {/* <ButtonGroup >
+      <Container maxWidth='lg'>
+        <Toolbar className={classes.toolbar}>
+          {/* <Button size='small'>ART</Button> */}
+          <img src={stlogo} className='logo' alt='' />
+          <Typography
+            component='h2'
+            variant='h4'
+            color='inherit'
+            align='left'
+            noWrap
+            className='toolbarTitle'>
+            {title}
+          </Typography>
+          {/* <IconButton>
+            <SearchIcon />
+          </IconButton> */}
           <Button
-            startIcon={<BubbleChart />}
-            variant='contained'
-            size='large'
-            color='primary'>
-            All Arts
+            size='small'
+            className='topbarButton'
+            // variant='outlined'
+            // color='primary'
+            startIcon={<PanToolOutlinedIcon color='inherit' />}>
+            About me
           </Button>
+          &nbsp;
+          <Button
+            size='small'
+            className='topbarButton'
+            // variant='outlined'
+            color='primary'
+            startIcon={<WhatsAppIcon color='inherit' />}>
+            Contact
+          </Button>
+          {/* <Button variant='outlined' size='small'>
+            Sign up
+          </Button> */}
+        </Toolbar>
+        <br />
+        <Toolbar
+          component='nav'
+          variant='dense'
+          className={classes.toolbarSecondary}>
+          {sections.map((section) => (
+            <Button
+              onClick={() => handleFilterClick(section.key)}
+              variant='outlined'
+              className='filterButton'
+              size='small'
+              color='primary'>
+              {section.title}
+            </Button>
+          ))}
+        </Toolbar>
 
-          <Button variant='contained' size='small' color='primary'>
-            Pencil
-          </Button>
-          <Button variant='contained' size='small' color='primary'>
-            Color pencil
-          </Button>
-          <Button variant='contained' size='small' color='primary'>
-            Watercolor
-          </Button>
-          <Button variant='contained' size='small' color='primary'>
-            Acrylic
-          </Button>
-        </ButtonGroup> */}
+        <Box>
+          <ImageList variant='masonry' cols={4} gap={16}>
+            {filteredPics &&
+              filteredPics.map((item) => (
+                <ImageListItem key={item.img}>
+                  <img
+                    // src='images/portrait1.png'
+                    src={`images/${item.img}`}
+                    //   srcSet={`${item.img}?w=600&fit=crop&auto=format 1x,
+                    // ${item.img}?w=600&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading='lazy'
+                  />
+                </ImageListItem>
+              ))}
+          </ImageList>
+        </Box>
       </Container>
     </>
   );

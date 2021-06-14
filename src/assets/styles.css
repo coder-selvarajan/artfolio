@@ -1,0 +1,32 @@
+.logo {
+  width: 30px;
+  height: auto;
+  padding-right: 10px;
+}
+
+.toolbarTitle {
+  flex: 1;
+  font-family: "Josefin Slab", serif !important;
+  font-weight: 300 !important;
+  /* font-family: "Waiting for the Sunrise", cursive !important; */
+  /* font-family: "Caveat", cursive !important; */
+  /* font-family: "Architects Daughter", cursive !important; */
+}
+
+.topbarButton {
+  /* color: lightcoral !important; */
+  color: slategrey !important;
+}
+
+.filterButton {
+  /* background-color: lightcoral !important;
+  color: white !important; */
+  font-size: 0.7rem !important;
+
+  /* background-color: whitesmoke !important;
+  color: steelblue !important;
+  border-color: steelblue !important; */
+  background-color: steelblue !important;
+  color: white !important;
+  border-color: white !important;
+}

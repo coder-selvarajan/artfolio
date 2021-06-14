@@ -1,45 +1,46 @@
 export const categories = [
-  { title: "All Artworks", key: "all" },
+  { title: "Featured", key: "featured" },
   { title: "Pencil", key: "pencil" },
-  { title: "Color Pencil", key: "colorpencil" },
+  { title: "Color-Pencil", key: "colorpencil" },
   { title: "Charcoal", key: "charcoal" },
   { title: "Pen", key: "pen" },
   { title: "Watercolor", key: "watercolor" },
-  { title: "Coffee Art", key: "coffee" },
+  { title: "Coffee-Art", key: "coffee" },
   // { title: "Acrylic", url: "#" },
   // { title: "Oil Pastel", url: "#" },
-  { title: "Soft Pastel", key: "softpastel" },
+  { title: "Soft-Pastel", key: "softpastel" },
+  { title: "All", key: "all" },
 ];
 
 export const picsDB = [
   {
     img: "21-watercolor-window.jpg",
     title: "Window",
-    category: ["watercolor"],
+    category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "21-watercolor-door.jpg",
     title: "Door",
-    category: ["watercolor"],
+    category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "21-watercolor-tree2.jpg",
     title: "tree",
-    category: ["watercolor"],
+    category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "21-watercolor-book2.jpg",
     title: "book2",
-    category: ["watercolor"],
+    category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-waterbottle.jpg",
     title: "waterbottle",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   { img: "21-pencil-women.jpg", title: "women", category: [], year: 2021 },
@@ -52,19 +53,19 @@ export const picsDB = [
   {
     img: "21-pencil-vegetable.jpg",
     title: "vegetable",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-trib-kid.jpg",
     title: "trib-kid",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-tree2.jpg",
     title: "tree2",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
@@ -76,7 +77,7 @@ export const picsDB = [
   {
     img: "21-pencil-thirisulam.jpg",
     title: "Thirisulam",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
@@ -94,13 +95,13 @@ export const picsDB = [
   {
     img: "21-pencil-portrait5.jpg",
     title: "portrait5",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-charcoal-jug.jpg",
     title: "jug",
-    category: ["charcoal"],
+    category: ["charcoal", "featured"],
     year: 2021,
   },
   {
@@ -112,19 +113,19 @@ export const picsDB = [
   {
     img: "21-pencil-pear.jpg",
     title: "pear",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-mountain2.jpg",
     title: "mountain2",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-mountain3.jpg",
     title: "mountain3",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
@@ -136,19 +137,19 @@ export const picsDB = [
   {
     img: "21-pencil-dream.jpg",
     title: "dream",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-clip.jpg",
     title: "clip",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-carrot.jpg",
     title: "carrot",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
@@ -160,13 +161,13 @@ export const picsDB = [
   {
     img: "21-pencil-buddha2.jpg",
     title: "buddha2",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-watercolor-lotus2.jpg",
     title: "lotus2",
-    category: [],
+    category: ["watercolor"],
     year: 2021,
   },
   {
@@ -178,7 +179,7 @@ export const picsDB = [
   {
     img: "21-pencil-banana2.jpg",
     title: "banana2",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   { img: "21-pen-monk.jpg", title: "monk", category: ["pen"], year: 2021 },
@@ -187,7 +188,7 @@ export const picsDB = [
   {
     img: "21-charcoal-kingkong.jpg",
     title: "kingkong",
-    category: ["charcoal"],
+    category: ["charcoal", "featured"],
     year: 2021,
   },
   {
@@ -207,7 +208,7 @@ export const picsDB = [
   {
     img: "21-pencil-wood.jpg",
     title: "Wood",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
@@ -218,86 +219,86 @@ export const picsDB = [
   },
   {
     img: "21-pencil-portrait.jpg",
-    title: "Window",
-    category: [],
+    title: "Man Portrait",
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-parrot.jpg",
     title: "parrot",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-home.jpg",
     title: "home",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-deer.jpg",
     title: "deer",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-bull.jpg",
     title: "bull",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-brother.jpg",
     title: "brother",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "21-pencil-bridge.jpg",
     title: "bridge",
-    category: ["pencil"],
+    category: ["pencil", "featured"],
     year: 2021,
   },
   {
     img: "20-watercolor-vinayaka.jpg",
     title: "vinayaka",
-    category: ["watercolor"],
+    category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "20-watercolor-buddha.jpg",
     title: "buddha",
-    category: ["watercolor"],
+    category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "20-colorpencil-hanuman.jpg",
     title: "hanuman",
-    category: ["colorpencil", "watercolor"],
+    category: ["colorpencil", "watercolor", "featured"],
     year: 2021,
   },
   {
     img: "20-coffee-landscape.jpg",
     title: "landscape",
-    category: ["coffee"],
+    category: ["coffee", "featured"],
     year: 2021,
   },
   {
     img: "16-colorpencil-krishna-radha.jpg",
     title: "Krishna-radha",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
   {
     img: "16-colorpencil-amman.jpg",
     title: "Amman",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
   {
     img: "15-softpastel-pot.jpg",
     title: "pot",
-    category: ["softpastel"],
+    category: ["softpastel", "featured"],
     year: 2021,
   },
   {
@@ -309,7 +310,7 @@ export const picsDB = [
   {
     img: "15-colorpencil-young-krishna.jpg",
     title: "young-krishna",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
   {
@@ -321,7 +322,7 @@ export const picsDB = [
   {
     img: "15-colorpencil-parrot.jpg",
     title: "parrot",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
   {
@@ -333,19 +334,19 @@ export const picsDB = [
   {
     img: "15-colorpencil-banana.jpg",
     title: "banana",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
   {
     img: "15-colorpencil-baby-krishna.jpg",
     title: "baby-krishna",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
   {
     img: "15-colorpencil-apple.jpg",
     title: "apple",
-    category: ["colorpencil"],
+    category: ["colorpencil", "featured"],
     year: 2021,
   },
 ];

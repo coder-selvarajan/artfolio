@@ -2,6 +2,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles } from "@material-ui/styles";
 import { categories } from "../data/constants";
 import Chip from "@material-ui/core/Chip";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 const useStyles = makeStyles((theme) => ({
   toolbarSecondary: {
@@ -26,6 +27,7 @@ const FilterBar = (props) => {
           color='primary'
           variant={`${selectedFilter === category.key ? "filled" : "outlined"}`}
           size={`${selectedFilter === category.key ? "medium" : "small"}`}
+          icon={selectedFilter === category.key ? <CheckCircleIcon /> : null}
         />
       ))}
     </Toolbar>

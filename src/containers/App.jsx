@@ -11,7 +11,6 @@ import stlogo from "../assets/st-logo.png";
 import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import { picsDB } from "../data/constants";
-import { MicRounded } from "@material-ui/icons";
 
 const sections = [
   { title: "All Artworks", key: "all" },

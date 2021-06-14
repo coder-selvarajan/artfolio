@@ -10,20 +10,7 @@ import ImageListItem from "@material-ui/core/ImageListItem";
 import stlogo from "../assets/st-logo.png";
 import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
-import { picsDB } from "../data/constants";
-
-const sections = [
-  { title: "All Artworks", key: "all" },
-  { title: "Pencil", key: "pencil" },
-  { title: "Color Pencil", key: "colorpencil" },
-  // { title: "Charcoal", key: "charcoal" },
-  // { title: "Pen", key: "pen" },
-  { title: "Watercolor", key: "watercolor" },
-  { title: "Coffee Art", key: "coffee" },
-  // { title: "Acrylic", url: "#" },
-  // { title: "Oil Pastel", url: "#" },
-  { title: "Soft Pastel", key: "softpastel" },
-];
+import { picsDB, categories } from "../data/constants";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -99,14 +86,14 @@ function App() {
           component='nav'
           variant='dense'
           className={classes.toolbarSecondary}>
-          {sections.map((section) => (
+          {categories.map((category) => (
             <Button
-              onClick={() => handleFilterClick(section.key)}
+              onClick={() => handleFilterClick(category.key)}
               variant='outlined'
               className='filterButton'
               size='small'
               color='primary'>
-              {section.title}
+              {category.title}
             </Button>
           ))}
         </Toolbar>

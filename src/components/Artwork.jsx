@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Box from "@material-ui/core/Box";
 import Skeleton from "@material-ui/core/Skeleton";
 
 const Artwork = (props) => {

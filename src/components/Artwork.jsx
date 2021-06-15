@@ -13,7 +13,7 @@ const Artwork = (props) => {
         loading='lazy'
         onLoad={() => setloaded(true)}
       />
-      {loaded || <Skeleton variant='rectangular' width={300} height={100} />}
+      {loaded || <Skeleton variant='rectangular' width={300} height={200} />}
     </>
   );
 };

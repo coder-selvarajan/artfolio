@@ -15,14 +15,14 @@ export const categories = [
 export const picsDB = [
   {
     img: "21-watercolor-window.jpg",
-    title: "Window",
-    category: ["watercolor", "featured"],
+    title: "Window Box Flowers",
+    category: ["watercolor", "featured", "pen"],
     year: 2021,
   },
   {
     img: "21-watercolor-door.jpg",
-    title: "Door",
-    category: ["watercolor", "featured"],
+    title: "Doorstep",
+    category: ["watercolor", "featured", "pen"],
     year: 2021,
   },
   {
@@ -34,7 +34,7 @@ export const picsDB = [
   {
     img: "21-watercolor-book2.jpg",
     title: "Books",
-    category: ["watercolor", "featured"],
+    category: ["watercolor", "featured", "pen"],
     year: 2021,
   },
   {
@@ -136,7 +136,7 @@ export const picsDB = [
   },
   {
     img: "21-pencil-dream.jpg",
-    title: "My Dream",
+    title: "Dream Home",
     category: ["pencil", "featured"],
     year: 2021,
   },
@@ -207,7 +207,7 @@ export const picsDB = [
 
   {
     img: "21-pencil-wood.jpg",
-    title: "Wood",
+    title: "Half Cut Tree",
     category: ["pencil", "featured"],
     year: 2021,
   },
@@ -261,14 +261,14 @@ export const picsDB = [
   },
   {
     img: "20-watercolor-vinayaka.jpg",
-    title: "Ganesha",
+    title: "Lord Ganesha",
     category: ["watercolor", "featured"],
     year: 2021,
   },
   {
     img: "20-watercolor-buddha.jpg",
     title: "Buddha",
-    category: ["watercolor", "featured"],
+    category: ["watercolor", "featured", "pen"],
     year: 2021,
   },
   {
@@ -291,7 +291,7 @@ export const picsDB = [
   },
   {
     img: "16-colorpencil-amman.jpg",
-    title: "Amman",
+    title: "Samayapuram Amman",
     category: ["colorpencil", "featured"],
     year: 2021,
   },

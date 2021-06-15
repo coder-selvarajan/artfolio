@@ -1,6 +1,8 @@
 import Box from "@material-ui/core/Box";
 import ImageList from "@material-ui/core/ImageList";
 import ImageListItem from "@material-ui/core/ImageListItem";
+import ImageListItemBar from "@material-ui/core/ImageListItemBar";
+import Artwork from "./Artwork";
 
 const ArtworkList = (props) => {
   const { filteredPics } = props;
@@ -10,13 +12,9 @@ const ArtworkList = (props) => {
         {filteredPics &&
           filteredPics.map((item) => (
             <ImageListItem key={item.img}>
-              <img
-                src={`images/${item.img}`}
-                //   srcSet={`${item.img}?w=600&fit=crop&auto=format 1x,
-                // ${item.img}?w=600&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading='lazy'
-              />
+              <Artwork item={item} />
+              {/* <img src={`images/${item.img}`} alt={item.title} loading='lazy' /> */}
+              {/* <ImageListItemBar position='below' title={item.title} /> */}
             </ImageListItem>
           ))}
       </ImageList>

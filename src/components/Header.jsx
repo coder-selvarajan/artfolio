@@ -1,14 +1,13 @@
 import { makeStyles } from "@material-ui/styles";
 import Typography from "@material-ui/core/Typography";
-// import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import stlogo from "../assets/st-logo.png";
-// import PanToolOutlinedIcon from "@material-ui/icons/PanToolOutlined";
-// import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { blue, red } from "@material-ui/core/colors";
 import Link from "@material-ui/core/Link";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -21,12 +20,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
+  const notMobile = useMediaQuery("(min-width:400px)");
   const classes = useStyles();
   const title = " Artfolio";
 
   return (
     <Toolbar className={classes.toolbar}>
-      {/* <Button size='small'>ART</Button> */}
       <img src={stlogo} className='logo' alt='' />
       <Typography
         component='h2'
@@ -37,26 +36,19 @@ const Header = () => {
         className='toolbarTitle'>
         {title}
       </Typography>
-      {/* <IconButton>
-      <SearchIcon />
-    </IconButton> */}
-      {/* <Button
-        size='small'
-        className='topbarButton'
-        // variant='outlined'
-        // color='primary'
-        startIcon={<PanToolOutlinedIcon color='inherit' />}>
-        About me
-      </Button>
-      &nbsp; */}
-      <Typography
-        component='h6'
-        variant='body1'
-        color='inherit'
-        align='right'
-        noWrap>
-        CONTACT ME : &nbsp;
-      </Typography>
+      {notMobile && (
+        <>
+          <Typography
+            component='h6'
+            variant='body2'
+            color='inherit'
+            align='right'
+            noWrap>
+            CONNECT WITH ME
+          </Typography>
+          <ArrowRightIcon style={{ fontSize: 30, color: "gray" }} />
+        </>
+      )}
       <Link
         href='https://instagram.com/selvarajan.t'
         target='_blank'

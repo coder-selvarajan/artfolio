@@ -3,6 +3,7 @@ import Skeleton from "@material-ui/core/Skeleton";
 
 const Artwork = (props) => {
   const [loaded, setloaded] = useState(false);
+  const { skeletonWidth, skeletonHeight } = props;
 
   const { item } = props;
   return (
@@ -13,7 +14,13 @@ const Artwork = (props) => {
         loading='lazy'
         onLoad={() => setloaded(true)}
       />
-      {loaded || <Skeleton variant='rectangular' width={300} height={200} />}
+      {loaded || (
+        <Skeleton
+          variant='rectangular'
+          width={skeletonWidth}
+          height={skeletonHeight}
+        />
+      )}
     </>
   );
 };

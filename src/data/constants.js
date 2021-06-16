@@ -1,9 +1,9 @@
 export const categories = [
   { title: "Featured", key: "featured" },
   { title: "Pencil", key: "pencil" },
-  { title: "Color-Pencil", key: "colorpencil" },
   { title: "Charcoal", key: "charcoal" },
   { title: "Pen", key: "pen" },
+  { title: "Color-Pencil", key: "colorpencil" },
   { title: "Watercolor", key: "watercolor" },
   { title: "Coffee-Art", key: "coffee" },
   // { title: "Acrylic", url: "#" },

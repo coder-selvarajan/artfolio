@@ -12,6 +12,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `1px solid silver`,
+    padding: 10,
+    paddingBottom: 5,
   },
   toolbarLink: {
     padding: 2,
@@ -26,10 +28,14 @@ const Header = () => {
 
   return (
     <Toolbar className={classes.toolbar}>
-      <img src={stlogo} className='logo' alt='' />
+      <img
+        src={stlogo}
+        className={`${notMobile ? "logo" : "logo4Mobile"}`}
+        alt=''
+      />
       <Typography
         component='h2'
-        variant='h4'
+        variant={`${notMobile ? "h4" : "h5"}`}
         color='inherit'
         align='left'
         noWrap
@@ -53,14 +59,18 @@ const Header = () => {
         href='https://instagram.com/selvarajan.t'
         target='_blank'
         color='inherit'>
-        <InstagramIcon style={{ color: red[300], fontSize: 40 }} />
+        <InstagramIcon
+          style={{ color: red[300], fontSize: notMobile ? 40 : 30 }}
+        />
       </Link>
       &nbsp;
       <Link
         href='https://twitter.com/selvarajant'
         target='_blank'
         color='inherit'>
-        <TwitterIcon style={{ color: blue[300], fontSize: 40 }} />
+        <TwitterIcon
+          style={{ color: blue[300], fontSize: notMobile ? 40 : 30 }}
+        />
       </Link>
     </Toolbar>
   );

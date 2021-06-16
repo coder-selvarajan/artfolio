@@ -47,13 +47,13 @@ export const picsDB = [
   {
     img: "21-pencil-vivekananda.jpg",
     title: "Vivekananda",
-    category: ["pencil"],
+    category: [],
     year: 2021,
   },
   {
     img: "21-pencil-vegetable.jpg",
     title: "Vegetable",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
@@ -93,9 +93,15 @@ export const picsDB = [
     year: 2021,
   },
   {
+    img: "21-pencil-mountain3.jpg",
+    title: "Mountain",
+    category: ["pencil", "featured"],
+    year: 2021,
+  },
+  {
     img: "21-pencil-portrait5.jpg",
     title: "Portrait",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
@@ -116,14 +122,9 @@ export const picsDB = [
     category: ["pencil", "featured"],
     year: 2021,
   },
+
   {
     img: "21-pencil-mountain2.jpg",
-    title: "Mountain",
-    category: ["pencil", "featured"],
-    year: 2021,
-  },
-  {
-    img: "21-pencil-mountain3.jpg",
     title: "Mountain",
     category: ["pencil", "featured"],
     year: 2021,
@@ -161,7 +162,7 @@ export const picsDB = [
   {
     img: "21-pencil-buddha2.jpg",
     title: "Buddha",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
@@ -218,17 +219,18 @@ export const picsDB = [
     year: 2021,
   },
   {
-    img: "21-pencil-portrait.jpg",
-    title: "Portrait",
-    category: ["pencil", "featured"],
-    year: 2021,
-  },
-  {
     img: "21-pencil-parrot.jpg",
     title: "Parrot",
     category: ["pencil", "featured"],
     year: 2021,
   },
+  {
+    img: "21-pencil-portrait.jpg",
+    title: "Portrait",
+    category: ["pencil", "featured"],
+    year: 2021,
+  },
+
   {
     img: "21-pencil-home.jpg",
     title: "Home",

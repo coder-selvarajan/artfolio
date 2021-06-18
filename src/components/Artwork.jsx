@@ -12,7 +12,7 @@ const Artwork = (props) => {
         src={`images/${item.img}`}
         className='handIcon'
         alt={item.title}
-        // loading='lazy'
+        loading='lazy'
         onLoad={() => setloaded(true)}
         onClick={() => onClickEvent(item)}
       />

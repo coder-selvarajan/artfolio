@@ -7,16 +7,16 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 
 const ArtworkPopup = (props) => {
   const { openArtwork, setOpenArtwork, artwork } = props;
-  const [fullWidth, setFullWidth] = React.useState(true);
-  const [maxWidth, setMaxWidth] = React.useState("lg");
+  // const [fullWidth, setFullWidth] = React.useState(true);
+  const [maxWidth] = React.useState("lg");
 
   const handleClose = () => {
     setOpenArtwork(false);
   };
 
-  const handleFullWidthChange = (event) => {
-    setFullWidth(event.target.checked);
-  };
+  // const handleFullWidthChange = (event) => {
+  //   setFullWidth(event.target.checked);
+  // };
 
   return (
     <Dialog

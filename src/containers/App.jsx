@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg' className='container'>
         <Header />
         <br />
         <FilterBar

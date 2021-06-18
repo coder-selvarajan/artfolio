@@ -1,14 +1,23 @@
+import { useState } from "react";
 import Box from "@material-ui/core/Box";
 import ImageList from "@material-ui/core/ImageList";
 import ImageListItem from "@material-ui/core/ImageListItem";
 import Artwork from "./Artwork";
 import ImageListItemBar from "@material-ui/core/ImageListItemBar";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import ArtworkPopup from "./ArtworkPopup";
 
 const ArtworkList = (props) => {
   const notMobile = useMediaQuery("(min-width:600px)");
+  const [openArtwork, setOpenArtwork] = useState(false);
+  const [selectedArtwork, setSelectedArtwork] = useState(null);
 
   const { filteredPics } = props;
+  const onImageClick = (artwork) => {
+    setSelectedArtwork(artwork);
+    setOpenArtwork(true);
+  };
+
   if (!notMobile) {
     return (
       <Box>
@@ -16,7 +25,12 @@ const ArtworkList = (props) => {
           {filteredPics &&
             filteredPics.map((item) => (
               <ImageListItem key={item.img}>
-                <Artwork item={item} skeletonWidth='300' skeletonHeight='200' />
+                <Artwork
+                  item={item}
+                  skeletonWidth='300'
+                  skeletonHeight='200'
+                  onClickEvent={() => {}}
+                />
                 <ImageListItemBar
                   sx={{
                     background:
@@ -35,11 +49,16 @@ const ArtworkList = (props) => {
   }
   return (
     <Box>
-      <ImageList variant='masonry' cols={4} gap={16}>
+      <ImageList variant='masonry' cols={4} gap={20}>
         {filteredPics &&
           filteredPics.map((item) => (
             <ImageListItem key={item.img}>
-              <Artwork item={item} skeletonWidth='300' skeletonHeight='200' />
+              <Artwork
+                item={item}
+                skeletonWidth='300'
+                skeletonHeight='200'
+                onClickEvent={onImageClick}
+              />
               <ImageListItemBar
                 sx={{
                   background:
@@ -53,6 +72,11 @@ const ArtworkList = (props) => {
             </ImageListItem>
           ))}
       </ImageList>
+      <ArtworkPopup
+        openArtwork={openArtwork}
+        setOpenArtwork={setOpenArtwork}
+        artwork={selectedArtwork}
+      />
     </Box>
   );
 };

@@ -4,7 +4,7 @@
   padding-right: 10px;
 }
 .logo4Mobile {
-  width: 25px;
+  width: 27px;
   height: auto;
   padding-right: 10px;
 }
@@ -12,7 +12,7 @@
 .toolbarTitle {
   flex: 1;
   font-family: "Josefin Slab", serif !important;
-  font-weight: 700 !important;
+  font-weight: 900 !important;
   /* font-family: "Waiting for the Sunrise", cursive !important; */
   /* font-family: "Caveat", cursive !important; */
   /* font-family: "Architects Daughter", cursive !important; */
@@ -40,4 +40,8 @@
   font-size: 0.7rem !important;
   line-height: 18px !important;
   /* color: black; */
+}
+
+.handIcon {
+  cursor: pointer;
 }

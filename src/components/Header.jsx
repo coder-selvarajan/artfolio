@@ -35,7 +35,7 @@ const Header = () => {
       />
       <Typography
         component='h2'
-        variant={`${notMobile ? "h4" : "h5"}`}
+        variant={`${notMobile ? "h4" : "h4"}`}
         color='inherit'
         align='left'
         noWrap
@@ -60,7 +60,7 @@ const Header = () => {
         target='_blank'
         color='inherit'>
         <InstagramIcon
-          style={{ color: red[300], fontSize: notMobile ? 40 : 30 }}
+          style={{ color: red[300], fontSize: notMobile ? 40 : 35 }}
         />
       </Link>
       &nbsp;
@@ -69,7 +69,7 @@ const Header = () => {
         target='_blank'
         color='inherit'>
         <TwitterIcon
-          style={{ color: blue[300], fontSize: notMobile ? 40 : 30 }}
+          style={{ color: blue[300], fontSize: notMobile ? 40 : 35 }}
         />
       </Link>
     </Toolbar>

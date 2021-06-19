@@ -1,10 +1,10 @@
 body {
   background-color: whitesmoke;
-
   /* background-image: url("bg2.png");
   background-repeat: no-repeat;
   background-position: center -650px; */
-  /* background: linear-gradient(0deg, whitesmoke, yellow, cyan); */
+  background: linear-gradient(90deg, lightyellow, lightcyan);
+  /* background: linear-gradient(180deg, rgba(255, 255, 0, 0.1), whitesmoke); */
 
   /* background: linear-gradient(
       217deg,

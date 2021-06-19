@@ -5,10 +5,11 @@ export const categories = [
   { title: "Pen", key: "pen" },
   { title: "Color-Pencil", key: "colorpencil" },
   { title: "Watercolor", key: "watercolor" },
-  { title: "Coffee-Art", key: "coffee" },
+  { title: "Oil-Pastel", key: "oilpastel" },
+  // { title: "Coffee-Art", key: "coffee" },
   // { title: "Acrylic", url: "#" },
-  // { title: "Oil Pastel", url: "#" },
-  { title: "Soft-Pastel", key: "softpastel" },
+  // { title: "Soft-Pastel", key: "softpastel" },
+  { title: "Others", key: "others" },
   { title: "All", key: "all" },
 ];
 
@@ -28,7 +29,7 @@ export const picsDB = [
   {
     img: "21-watercolor-tree2.jpg",
     title: "Tree",
-    category: ["watercolor", "featured"],
+    category: ["watercolor"],
     year: 2021,
   },
   {
@@ -77,7 +78,7 @@ export const picsDB = [
   {
     img: "21-pencil-thirisulam.jpg",
     title: "Thirisulam",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
@@ -105,6 +106,12 @@ export const picsDB = [
     year: 2021,
   },
   {
+    img: "21-pencil-clip.jpg",
+    title: "Clip",
+    category: ["pencil", "featured"],
+    year: 2021,
+  },
+  {
     img: "21-charcoal-jug.jpg",
     title: "Jug",
     category: ["charcoal", "featured"],
@@ -117,12 +124,23 @@ export const picsDB = [
     year: 2021,
   },
   {
+    img: "21-charcoal-kingkong.jpg",
+    title: "Kingkong",
+    category: ["charcoal", "featured"],
+    year: 2021,
+  },
+  {
     img: "21-pencil-pear.jpg",
     title: "Pear",
     category: ["pencil", "featured"],
     year: 2021,
   },
-
+  {
+    img: "18-oilpastel-birds-on-tree.jpg",
+    title: "Birds on Tree-branch",
+    category: ["oilpastel", "featured"],
+    year: 2018,
+  },
   {
     img: "21-pencil-mountain2.jpg",
     title: "Mountain",
@@ -138,19 +156,13 @@ export const picsDB = [
   {
     img: "21-pencil-dream.jpg",
     title: "Dream Home",
-    category: ["pencil", "featured"],
-    year: 2021,
-  },
-  {
-    img: "21-pencil-clip.jpg",
-    title: "Clip",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
     img: "21-pencil-carrot.jpg",
     title: "Carrot",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
@@ -186,12 +198,7 @@ export const picsDB = [
   { img: "21-pen-monk.jpg", title: "Monk", category: ["pen"], year: 2021 },
   { img: "21-pen-lotus.jpg", title: "Lotus", category: ["pen"], year: 2021 },
   { img: "21-pen-frog.jpg", title: "Frog", category: ["pen"], year: 2021 },
-  {
-    img: "21-charcoal-kingkong.jpg",
-    title: "Kingkong",
-    category: ["charcoal", "featured"],
-    year: 2021,
-  },
+
   {
     img: "21-pencil-portrait4.jpg",
     title: "Portrait",
@@ -225,6 +232,12 @@ export const picsDB = [
     year: 2021,
   },
   {
+    img: "20-coffee-landscape.jpg",
+    title: "Landscape (with coffee-powder)",
+    category: ["coffee", "featured", "others"],
+    year: 2021,
+  },
+  {
     img: "21-pencil-portrait.jpg",
     title: "Portrait",
     category: ["pencil", "featured"],
@@ -236,6 +249,12 @@ export const picsDB = [
     title: "Home",
     category: ["pencil", "featured"],
     year: 2021,
+  },
+  {
+    img: "18-oilpastel-bridge-couple.jpg",
+    title: "Couple on bridge",
+    category: ["oilpastel", "featured"],
+    year: 2018,
   },
   {
     img: "21-pencil-deer.jpg",
@@ -258,7 +277,7 @@ export const picsDB = [
   {
     img: "21-pencil-bridge.jpg",
     title: "Bridge",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
   },
   {
@@ -275,16 +294,11 @@ export const picsDB = [
   },
   {
     img: "20-colorpencil-hanuman.jpg",
-    title: "Hanuman",
+    title: "Jai Hanuman",
     category: ["colorpencil", "watercolor", "featured"],
     year: 2021,
   },
-  {
-    img: "20-coffee-landscape.jpg",
-    title: "Landscape",
-    category: ["coffee", "featured"],
-    year: 2021,
-  },
+
   {
     img: "16-colorpencil-krishna-radha.jpg",
     title: "Radha Krishna",
@@ -299,8 +313,8 @@ export const picsDB = [
   },
   {
     img: "15-softpastel-pot.jpg",
-    title: "Pot",
-    category: ["softpastel", "featured"],
+    title: "Pot (with soft-pastel)",
+    category: ["softpastel", "featured", "others"],
     year: 2021,
   },
   {

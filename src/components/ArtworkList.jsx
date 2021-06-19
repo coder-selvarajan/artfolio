@@ -21,7 +21,7 @@ const ArtworkList = (props) => {
   if (!notMobile) {
     return (
       <Box>
-        <ImageList variant='masonry' cols={1} gap={8}>
+        <ImageList variant='masonry' cols={1} gap={12}>
           {filteredPics &&
             filteredPics.map((item) => (
               <ImageListItem key={item.img}>

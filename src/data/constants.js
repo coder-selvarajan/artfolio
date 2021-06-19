@@ -128,6 +128,7 @@ export const picsDB = [
     category: ["pencil", "featured"],
     year: 2021,
   },
+
   {
     img: "21-charcoal-kingkong.jpg",
     title: "Kingkong",
@@ -149,7 +150,13 @@ export const picsDB = [
     category: ["pencil"],
     year: 2021,
   },
-
+  {
+    img: "21-pencil-pot.jpg",
+    title: "Pot",
+    medium: "Graphite Pencil",
+    category: ["pencil", "featured"],
+    year: 2021,
+  },
   {
     img: "21-pencil-pear.jpg",
     title: "Pear",
@@ -273,24 +280,10 @@ export const picsDB = [
     year: 2021,
   },
   {
-    img: "21-pencil-pot.jpg",
-    title: "Pot",
-    medium: "Graphite Pencil",
-    category: ["pencil"],
-    year: 2021,
-  },
-  {
     img: "21-pencil-parrot.jpg",
     title: "Parrots",
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
-    year: 2021,
-  },
-  {
-    img: "20-coffee-landscape.jpg",
-    title: "Landscape (coffee painting)",
-    medium: "Coffee-powder, Water",
-    category: ["coffee", "featured", "others"],
     year: 2021,
   },
   {
@@ -314,6 +307,13 @@ export const picsDB = [
     medium: "Oil Passtel",
     category: ["oilpastel", "featured"],
     year: 2018,
+  },
+  {
+    img: "20-coffee-landscape.jpg",
+    title: "Landscape (coffee painting)",
+    medium: "Coffee-powder, Water",
+    category: ["coffee", "featured", "others"],
+    year: 2021,
   },
   {
     img: "21-pencil-deer.jpg",
@@ -354,7 +354,7 @@ export const picsDB = [
     img: "20-watercolor-buddha.jpg",
     title: "Buddha",
     medium: "Pen & Watercolor",
-    category: ["watercolor", "featured", "pen"],
+    category: ["watercolor", "pen"],
     year: 2021,
   },
   {

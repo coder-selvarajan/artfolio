@@ -15,7 +15,7 @@ const Artwork = (props) => {
         className={`handIcon ${!notMobile ? "mobileImage" : ""}`}
         alt={item.title}
         loading='lazy'
-        width={`${!notMobile ? window.innerWidth - 20 : 300}`}
+        width={`${!notMobile ? window.innerWidth - 50 : 300}`}
         onLoad={() => setloaded(true)}
         onClick={() => onClickEvent(item)}
       />

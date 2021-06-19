@@ -7,29 +7,29 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 
 const ArtworkPopup = (props) => {
   const { openArtwork, setOpenArtwork, artwork } = props;
-  // const [fullWidth, setFullWidth] = React.useState(true);
   const [maxWidth] = React.useState("lg");
 
   const handleClose = () => {
     setOpenArtwork(false);
   };
 
-  // const handleFullWidthChange = (event) => {
-  //   setFullWidth(event.target.checked);
-  // };
-
   return (
     <Dialog
-      // fullWidth={fullWidth}
       maxWidth={maxWidth}
       open={openArtwork}
       onClose={handleClose}
       aria-labelledby='max-width-dialog-title'>
       <DialogTitle id='max-width-dialog-title'>
         {artwork && artwork.title}
+        {"  "}
+        <span className='mediumText'>
+          (Medium : {artwork && artwork.medium})
+        </span>
       </DialogTitle>
       <DialogContent>
-        {/* <DialogContentText>{artwork && artwork.title}</DialogContentText> */}
+        {/* <DialogContentText>
+          Medium : {artwork && artwork.medium}
+        </DialogContentText> */}
 
         <img
           src={`images/${artwork && artwork.img}`}

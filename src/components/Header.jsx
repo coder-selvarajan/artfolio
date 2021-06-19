@@ -58,6 +58,7 @@ const Header = () => {
       <Link
         href='https://instagram.com/selvarajan.t'
         target='_blank'
+        title='Instagram'
         color='inherit'>
         <InstagramIcon
           style={{ color: red[300], fontSize: notMobile ? 40 : 35 }}
@@ -67,6 +68,7 @@ const Header = () => {
       <Link
         href='https://twitter.com/selvarajant'
         target='_blank'
+        title='Twitter'
         color='inherit'>
         <TwitterIcon
           style={{ color: blue[300], fontSize: notMobile ? 40 : 35 }}

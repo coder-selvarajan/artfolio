@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+
   /* background-image: url("bg2.png");
   background-repeat: no-repeat;
   background-position: center -650px; */
@@ -70,4 +71,10 @@ body {
 
 .handIcon {
   cursor: pointer;
+}
+
+.mediumText {
+  font-size: small;
+  text-align: right;
+  vertical-align: middle;
 }

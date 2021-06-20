@@ -46,6 +46,8 @@ const ArtworkPopupMobile = (props) => {
         src={`images/${artwork && artwork.img}`}
         alt='window'
         loading='lazy'
+        width='100%'
+        height='auto'
       />
       <DialogActions>
         <Button onClick={handleClose}>Close</Button>

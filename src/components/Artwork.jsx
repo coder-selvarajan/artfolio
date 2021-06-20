@@ -1,5 +1,4 @@
 import { useState } from "react";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Skeleton from "@material-ui/core/Skeleton";
 
 const Artwork = (props) => {

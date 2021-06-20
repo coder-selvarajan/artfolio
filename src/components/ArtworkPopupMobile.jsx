@@ -11,7 +11,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const ArtworkPopupMobile = (props) => {
   const { openArtwork, setOpenArtwork, artwork } = props;
-  const [maxWidth] = React.useState("md");
 
   const handleClose = () => {
     setOpenArtwork(false);

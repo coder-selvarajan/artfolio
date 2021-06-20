@@ -36,7 +36,7 @@ const ArtworkPopup = (props) => {
         <img
           src={`images/${artwork && artwork.img}`}
           className={`${
-            artwork && artwork.mode == "landscape"
+            artwork && artwork.mode === "landscape"
               ? "landscapeView"
               : "portraitView"
           }`}

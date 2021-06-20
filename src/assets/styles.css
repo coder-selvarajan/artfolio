@@ -79,6 +79,14 @@ body {
   vertical-align: middle;
 }
 
+.landscapeView {
+  width: 650px;
+}
+
+.portraitView {
+  width: 450px;
+}
+
 /* .mobileImage {
   width: 100%;
 } */

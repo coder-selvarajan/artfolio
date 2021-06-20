@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
-  const notMobile = useMediaQuery("(min-width:400px)");
+  const notMobile = useMediaQuery("(min-width:600px)");
   const classes = useStyles();
   const title = " Artfolio";
 

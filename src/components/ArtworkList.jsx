@@ -6,6 +6,7 @@ import Artwork from "./Artwork";
 import ImageListItemBar from "@material-ui/core/ImageListItemBar";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import ArtworkPopup from "./ArtworkPopup";
+import ArtworkPopupMobile from "./ArtworkPopupMobile";
 
 const ArtworkList = (props) => {
   const notMobile = useMediaQuery("(min-width:600px)");
@@ -21,7 +22,7 @@ const ArtworkList = (props) => {
   if (!notMobile) {
     return (
       <Box>
-        <ImageList variant='masonry' cols={1} gap={12}>
+        <ImageList variant='masonry' cols={2} gap={12}>
           {filteredPics &&
             filteredPics.map((item) => (
               <ImageListItem key={item.img}>
@@ -29,7 +30,7 @@ const ArtworkList = (props) => {
                   item={item}
                   skeletonWidth='300'
                   skeletonHeight='200'
-                  onClickEvent={() => {}}
+                  onClickEvent={onImageClick}
                 />
                 <ImageListItemBar
                   sx={{
@@ -44,6 +45,11 @@ const ArtworkList = (props) => {
               </ImageListItem>
             ))}
         </ImageList>
+        <ArtworkPopupMobile
+          openArtwork={openArtwork}
+          setOpenArtwork={setOpenArtwork}
+          artwork={selectedArtwork}
+        />
       </Box>
     );
   }

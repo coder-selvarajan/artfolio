@@ -21,6 +21,7 @@ export const picsDB = [
     medium: "Pen & Watercolor",
     category: ["watercolor", "featured", "pen"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-watercolor-door.jpg",
@@ -28,6 +29,7 @@ export const picsDB = [
     medium: "Pen & Watercolor",
     category: ["watercolor", "featured", "pen"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-watercolor-tree2.jpg",
@@ -35,6 +37,7 @@ export const picsDB = [
     medium: "Pen & Watercolor",
     category: ["watercolor"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-watercolor-book2.jpg",
@@ -42,6 +45,7 @@ export const picsDB = [
     medium: "Pen & Watercolor",
     category: ["watercolor", "featured", "pen"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-waterbottle.jpg",
@@ -49,14 +53,22 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
-  { img: "21-pencil-women.jpg", title: "women", category: [], year: 2021 },
+  {
+    img: "21-pencil-women.jpg",
+    title: "women",
+    category: [],
+    year: 2021,
+    mode: "portrait",
+  },
   {
     img: "21-pencil-vivekananda.jpg",
     title: "Vivekananda",
     medium: "Graphite Pencil",
     category: [],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-vegetable.jpg",
@@ -64,6 +76,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-trib-kid.jpg",
@@ -71,6 +84,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-tree2.jpg",
@@ -78,6 +92,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-teacup.jpg",
@@ -85,6 +100,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-thirisulam.jpg",
@@ -92,6 +108,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-router.jpg",
@@ -99,6 +116,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-pot2.jpg",
@@ -106,6 +124,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-mountain3.jpg",
@@ -113,6 +132,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-portrait5.jpg",
@@ -120,6 +140,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-clip.jpg",
@@ -127,6 +148,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
 
   {
@@ -135,6 +157,7 @@ export const picsDB = [
     medium: "Charcoal, Graphite Pencil",
     category: ["charcoal", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-charcoal-jug.jpg",
@@ -142,6 +165,7 @@ export const picsDB = [
     medium: "Charcoal, Graphite Pencil",
     category: ["charcoal", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-portrait3.jpg",
@@ -149,6 +173,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-pot.jpg",
@@ -156,6 +181,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-pear.jpg",
@@ -163,6 +189,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "18-oilpastel-birds-on-tree.jpg",
@@ -170,6 +197,7 @@ export const picsDB = [
     medium: "Oil Pastel",
     category: ["oilpastel", "featured"],
     year: 2018,
+    mode: "landscape",
   },
   {
     img: "21-pencil-mountain2.jpg",
@@ -177,6 +205,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-elephent.jpg",
@@ -184,6 +213,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-dream.jpg",
@@ -191,6 +221,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-carrot.jpg",
@@ -198,6 +229,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-candle.jpg",
@@ -205,6 +237,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-buddha2.jpg",
@@ -212,6 +245,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-watercolor-lotus2.jpg",
@@ -219,13 +253,7 @@ export const picsDB = [
     medium: "Watercolor",
     category: ["watercolor"],
     year: 2021,
-  },
-  {
-    img: "21-pencil-books2.jpg",
-    title: "Books",
-    medium: "Graphite Pencil",
-    category: ["pencil"],
-    year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-banana2.jpg",
@@ -233,6 +261,15 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
+  },
+  {
+    img: "21-pencil-books2.jpg",
+    title: "Books",
+    medium: "Graphite Pencil",
+    category: ["pencil"],
+    year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pen-monk.jpg",
@@ -240,6 +277,7 @@ export const picsDB = [
     medium: "Pen",
     category: ["pen"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pen-lotus.jpg",
@@ -247,6 +285,7 @@ export const picsDB = [
     medium: "Pen",
     category: ["pen"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pen-frog.jpg",
@@ -254,6 +293,7 @@ export const picsDB = [
     medium: "Pen",
     category: ["pen"],
     year: 2021,
+    mode: "portrait",
   },
 
   {
@@ -262,6 +302,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "portrait",
   },
 
   {
@@ -270,6 +311,7 @@ export const picsDB = [
     medium: "Watercolor",
     category: ["watercolor"],
     year: 2021,
+    mode: "landscape",
   },
 
   {
@@ -278,6 +320,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-parrot.jpg",
@@ -285,6 +328,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-portrait.jpg",
@@ -292,6 +336,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
 
   {
@@ -300,6 +345,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "18-oilpastel-bridge-couple.jpg",
@@ -307,6 +353,7 @@ export const picsDB = [
     medium: "Oil Passtel",
     category: ["oilpastel", "featured"],
     year: 2018,
+    mode: "landscape",
   },
   {
     img: "20-coffee-landscape.jpg",
@@ -314,6 +361,7 @@ export const picsDB = [
     medium: "Coffee-powder, Water",
     category: ["coffee", "featured", "others"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-deer.jpg",
@@ -321,6 +369,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-bull.jpg",
@@ -328,13 +377,15 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "21-pencil-brother.jpg",
     title: "My Brother",
-    medium: "Graphite Pencil, Crayons",
+    medium: "Graphite Pencil, Crayon",
     category: ["pencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "21-pencil-bridge.jpg",
@@ -342,6 +393,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "20-watercolor-vinayaka.jpg",
@@ -349,6 +401,7 @@ export const picsDB = [
     medium: "Watercolor",
     category: ["watercolor", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "20-watercolor-buddha.jpg",
@@ -356,6 +409,7 @@ export const picsDB = [
     medium: "Pen & Watercolor",
     category: ["watercolor", "pen"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "20-colorpencil-hanuman.jpg",
@@ -363,6 +417,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "watercolor", "featured"],
     year: 2021,
+    mode: "portrait",
   },
 
   {
@@ -371,6 +426,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "16-colorpencil-amman.jpg",
@@ -378,6 +434,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "15-softpastel-pot.jpg",
@@ -385,6 +442,7 @@ export const picsDB = [
     medium: "Soft Pastel",
     category: ["softpastel", "featured", "others"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "15-pencil-stilllife-book.jpg",
@@ -392,6 +450,7 @@ export const picsDB = [
     medium: "Graphite Pencil",
     category: ["pencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "15-colorpencil-young-krishna.jpg",
@@ -399,6 +458,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "15-colorpencil-watermelon.jpg",
@@ -406,6 +466,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "15-colorpencil-parrot.jpg",
@@ -413,6 +474,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "15-colorpencil-kiwi.jpg",
@@ -420,6 +482,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "15-colorpencil-banana.jpg",
@@ -427,6 +490,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
   {
     img: "15-colorpencil-baby-krishna.jpg",
@@ -434,6 +498,7 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "portrait",
   },
   {
     img: "15-colorpencil-apple.jpg",
@@ -441,5 +506,6 @@ export const picsDB = [
     medium: "Color Pencil",
     category: ["colorpencil", "featured"],
     year: 2021,
+    mode: "landscape",
   },
 ];

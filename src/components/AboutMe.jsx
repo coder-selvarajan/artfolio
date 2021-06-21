@@ -15,9 +15,11 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import { blue, grey, indigo } from "@material-ui/core/colors";
 import Link from "@material-ui/core/Link";
 import PanToolIcon from "@material-ui/icons/PanTool";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 export default function BasicPopover() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const notMobile = useMediaQuery("(min-width:600px)");
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -38,7 +40,7 @@ export default function BasicPopover() {
         style={{ color: "grey", fontSize: 12 }}
         onClick={handleClick}>
         <PanToolIcon sx={{ fontSize: 20, color: blue["400"] }} />
-        &nbsp;&nbsp; About Me | Connect
+        &nbsp;&nbsp; {notMobile ? "About Me | Connect" : "About Me"}
       </Button>
 
       <Popover

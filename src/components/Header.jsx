@@ -2,13 +2,8 @@ import { makeStyles } from "@material-ui/styles";
 import Typography from "@material-ui/core/Typography";
 import Toolbar from "@material-ui/core/Toolbar";
 import stlogo from "../assets/st-logo.png";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import { blue, red } from "@material-ui/core/colors";
-import Link from "@material-ui/core/Link";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-
+import AboutMe from "../components/AboutMe";
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `1px solid silver`,
@@ -42,7 +37,8 @@ const Header = () => {
         className='toolbarTitle'>
         {title}
       </Typography>
-      {notMobile && (
+      <AboutMe />
+      {/* {notMobile && (
         <>
           <Typography
             component='h6'
@@ -73,7 +69,7 @@ const Header = () => {
         <TwitterIcon
           style={{ color: blue[300], fontSize: notMobile ? 40 : 35 }}
         />
-      </Link>
+      </Link> */}
     </Toolbar>
   );
 };

@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+  background-repeat: no-repeat;
   /* background-image: url("bg2.png");
   background-repeat: no-repeat;
   background-position: center -650px; */
@@ -26,6 +27,7 @@ body {
   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  min-height: 96vh;
 }
 
 .logo {

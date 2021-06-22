@@ -6,8 +6,8 @@ body {
   /* background: linear-gradient(90deg, lightyellow, lightcyan); */
   /* background: linear-gradient(70deg, lightcyan, whitesmoke); */
   /* background: linear-gradient(180deg, rgba(255, 255, 0, 0.1), whitesmoke); */
-  background: linear-gradient(127deg, lightblue, rgba(0, 0, 0, 0) 14.71%),
-    linear-gradient(217deg, lightyellow, rgba(0, 0, 0, 0) 14.71%);
+  background: linear-gradient(127deg, lightblue, rgba(255, 255, 255, 0) 15%),
+    linear-gradient(217deg, #f4be2c40, rgba(255, 255, 255, 0) 15%);
 
   /* background: linear-gradient(
       217deg,

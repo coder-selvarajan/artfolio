@@ -3,6 +3,7 @@ export const categories = [
   { title: "Pencil", key: "pencil" },
   { title: "Color-Pencil", key: "colorpencil" },
   { title: "Watercolor", key: "watercolor" },
+  { title: "Digital-Art", key: "digitalart" },
   { title: "Oil-Pastel", key: "oilpastel" },
   // { title: "Coffee-Art", key: "coffee" },
   // { title: "Acrylic", url: "#" },
@@ -15,6 +16,22 @@ export const categories = [
 ];
 
 export const picsDB = [
+  {
+    img: "21-digitalart-firewood2.jpg",
+    title: "Firewood",
+    medium: "Digital Art - Procreate",
+    category: ["digitalart", "featured"],
+    year: 2021,
+    mode: "portrait",
+  },
+  {
+    img: "21-digitalart-coconut-tree.jpg",
+    title: "Coconut Tree",
+    medium: "Digital Art - Procreate",
+    category: ["digitalart"],
+    year: 2021,
+    mode: "portrait",
+  },
   {
     img: "21-watercolor-window.jpg",
     title: "Window Box Flowers",

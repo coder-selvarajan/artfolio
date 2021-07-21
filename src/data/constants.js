@@ -18,7 +18,7 @@ export const categories = [
 export const picsDB = [
   {
     img: "21-digitalart-firewood2.jpg",
-    title: "Firewood",
+    title: "Burning Firewood",
     medium: "Digital Art - Procreate",
     category: ["digitalart", "featured"],
     year: 2021,

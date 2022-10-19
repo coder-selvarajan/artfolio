@@ -17,42 +17,10 @@ export const categories = [
 
 export const picsDB = [
   {
-    img: "21-digitalart-lord-venkateswara.jpg",
-    title: "Lord Venkateswara",
-    medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
-    year: 2021,
-    mode: "landscape",
-  },
-  {
-    img: "21-digitalart-swimming-pool-tube.jpg",
-    title: "Swimming Pool Tube",
-    medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
-    year: 2021,
-    mode: "portrait",
-  },
-  {
-    img: "21-digitalart-snake-plant.jpg",
-    title: "Snake Plant",
-    medium: "Digital Art - Procreate",
-    category: ["digitalart"],
-    year: 2021,
-    mode: "portrait",
-  },
-  {
     img: "21-digitalart-firewood2.jpg",
     title: "Burning Firewood",
     medium: "Digital Art - Procreate",
     category: ["digitalart", "featured"],
-    year: 2021,
-    mode: "portrait",
-  },
-  {
-    img: "21-digitalart-coconut-tree.jpg",
-    title: "Coconut Tree",
-    medium: "Digital Art - Procreate",
-    category: ["digitalart"],
     year: 2021,
     mode: "portrait",
   },

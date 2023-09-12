@@ -55,14 +55,14 @@ const ArtworkList = (props) => {
   }
   return (
     <Box>
-      <ImageList variant='masonry' cols={4} gap={25}>
+      <ImageList variant='masonry' cols={4} gap={40}>
         {filteredPics &&
           filteredPics.map((item) => (
             <ImageListItem key={item.img}>
               <Artwork
                 item={item}
                 skeletonWidth='300'
-                skeletonHeight='200'
+                skeletonHeight='250'
                 onClickEvent={onImageClick}
               />
               <ImageListItemBar

@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: white; 
   background-repeat: no-repeat;
   /* background-image: url("bg2.png");
   background-repeat: no-repeat;
@@ -7,8 +7,10 @@ body {
   /* background: linear-gradient(90deg, lightyellow, lightcyan); */
   /* background: linear-gradient(70deg, lightcyan, whitesmoke); */
   /* background: linear-gradient(180deg, rgba(255, 255, 0, 0.1), whitesmoke); */
-  background: linear-gradient(127deg, lightblue, rgba(255, 255, 255, 0) 15%),
-    linear-gradient(217deg, #f4be2c40, rgba(255, 255, 255, 0) 15%);
+
+
+  /* background: linear-gradient(127deg, lightblue, rgba(255, 255, 255, 0) 15%),
+    linear-gradient(217deg, #f4be2c40, rgba(255, 255, 255, 0) 15%); */
 
   /* background: linear-gradient(
       217deg,
@@ -21,12 +23,14 @@ body {
 
 .container {
   background-color: white;
-  border: 1px solid gainsboro;
+  
+  /* border: 1px solid gainsboro;
   border-radius: 20px;
-  margin-top: 20px;
   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.75); */
+  
+  margin-top: 20px;
   min-height: 96vh;
 }
 
@@ -50,6 +54,16 @@ body {
   /* font-family: "Architects Daughter", cursive !important; */
 }
 
+.toolbarTitle2 {
+  flex: 1;
+  /* font-family: "Josefin Slab", serif !important; */
+  /* font-weight: 900 !important; */
+  /* font-family: "Waiting for the Sunrise", cursive !important; */
+  /* font-family: "Caveat", cursive !important; */
+  font-family: "Arial", cursive !important;
+  font-size: 1.2rem !important;
+}
+
 .topbarButton {
   /* color: lightcoral !important; */
   color: slategrey !important;
@@ -63,6 +77,7 @@ body {
   /* background-color: whitesmoke !important;
   color: steelblue !important;
   border-color: steelblue !important; */
+
   background-color: steelblue !important;
   color: white !important;
   border-color: white !important;
@@ -76,6 +91,7 @@ body {
 
 .handIcon {
   cursor: pointer;
+  border: 1px solid gainsboro;
 }
 
 .mediumText {
@@ -95,3 +111,9 @@ body {
 /* .mobileImage {
   width: 100%;
 } */
+
+.infoText {
+  font-family: "Verdana";
+  font-size: 0.9rem;
+  padding-left: 10px;
+}

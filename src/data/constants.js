@@ -1,9 +1,9 @@
 export const categories = [
   { title: "Featured", key: "featured" },
-  { title: "Pencil", key: "pencil" },
   { title: "Color-Pencil", key: "colorpencil" },
-  { title: "Watercolor", key: "watercolor" },
   { title: "Digital-Art", key: "digitalart" },
+  { title: "Pencil", key: "pencil" },
+  { title: "Watercolor", key: "watercolor" },
   { title: "Oil-Pastel", key: "oilpastel" },
   // { title: "Coffee-Art", key: "coffee" },
   // { title: "Acrylic", url: "#" },
@@ -16,6 +16,126 @@ export const categories = [
 ];
 
 export const picsDB = [
+  {
+    "img": "23-riya-seyon.png",
+    "title": "Riya Seyon",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
+  {
+    "img": "23-vinayagar.png",
+    "title": "Lord Ganesha",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-bharathanattiyam.png",
+    "title": "Bharathanattiyam",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
+  {
+    "img": "23-buddha.png",
+    "title": "Buddha",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-buddha2.png",
+    "title": "Buddha",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-cake.png",
+    "title": "Cake",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
+  {
+    "img": "23-christmas-girl.png",
+    "title": "Christmas Girl",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-draganfruit.png",
+    "title": "Dragonfruit",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-gandhiji.png",
+    "title": "Gandhiji",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
+  {
+    "img": "23-girl-with-dear.png",
+    "title": "Girl with Deer",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
+  {
+    "img": "23-island-babybuddha.png",
+    "title": "Baby Buddha",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
+  {
+    "img": "23-king.png",
+    "title": "King",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-little-girl.png",
+    "title": "Little Girl",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-sanyasi2.png",
+    "title": "Sanyasi",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "portrait"
+  },
+  {
+    "img": "23-uber-boy.png",
+    "title": "Uber Boy",
+    "medium": "Digital Art - Procreate",
+    "category": ["digitalart", "featured"],
+    "year": 2024,
+    "mode": "landscape"
+  },
   {
     img: "22-mahabali.jpg",
     title: "King Mahabali",
@@ -36,7 +156,7 @@ export const picsDB = [
     img: "22-rajastani.png",
     title: "Rajasthani",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2023,
     mode: "portrait",
   },
@@ -44,7 +164,7 @@ export const picsDB = [
     img: "22-bharathiyar.png",
     title: "Poet Bharathiyar",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2023,
     mode: "portrait",
   },
@@ -60,7 +180,7 @@ export const picsDB = [
     img: "22-man-red.png",
     title: "Random Man",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2023,
     mode: "landscape",
   },
@@ -68,7 +188,7 @@ export const picsDB = [
     img: "22-office-man.png",
     title: "Office Man",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2023,
     mode: "portrait",
   },
@@ -76,7 +196,7 @@ export const picsDB = [
     img: "22-priest.png",
     title: "Saint",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2023,
     mode: "landscape",
   },
@@ -110,7 +230,7 @@ export const picsDB = [
     img: "22-self-portrait.png",
     title: "Self Portrait",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2023,
     mode: "landscape",
   },
@@ -127,7 +247,7 @@ export const picsDB = [
     img: "21-digitalart-firewood2.jpg",
     title: "Burning Firewood",
     medium: "Digital Art - Procreate",
-    category: ["digitalart", "featured"],
+    category: ["digitalart"],
     year: 2021,
     mode: "portrait",
   },
@@ -394,7 +514,7 @@ export const picsDB = [
     img: "21-pencil-portrait.jpg",
     title: "Portrait",
     medium: "Graphite Pencil",
-    category: ["pencil", "featured"],
+    category: ["pencil"],
     year: 2021,
     mode: "portrait",
   },
@@ -458,7 +578,7 @@ export const picsDB = [
     img: "20-watercolor-vinayaka.jpg",
     title: "Lord Ganesha",
     medium: "Watercolor",
-    category: ["watercolor", "featured"],
+    category: ["watercolor"],
     year: 2021,
     mode: "portrait",
   },
@@ -555,7 +675,7 @@ export const picsDB = [
     img: "15-colorpencil-baby-krishna.jpg",
     title: "Baby Krishna",
     medium: "Color Pencil",
-    category: ["colorpencil", "featured"],
+    category: ["colorpencil"],
     year: 2021,
     mode: "portrait",
   },

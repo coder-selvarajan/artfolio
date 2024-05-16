@@ -24,7 +24,7 @@ const FilterBar = (props) => {
           sx={{ m: notMobile ? 1 : 0.5 }}
           label={category.title.toUpperCase()}
           onClick={() => handleFilterClick(category.key)}
-          color='primary'
+          color='default'
           variant={`${selectedFilter === category.key ? "filled" : "outlined"}`}
           // size={`${selectedFilter === category.key ? "small" : "small"}`}
           size={`${notMobile ? "medium" : "small"}`}

@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const notMobile = useMediaQuery("(min-width:600px)");
   const classes = useStyles();
-  const title = " Artfolio";
+  const title = " Selvarajan.in";
 
   return (
     <Toolbar className={classes.toolbar}>

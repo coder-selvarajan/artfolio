@@ -26,12 +26,13 @@ function App() {
     <>
       <Container maxWidth='lg' className='container'>
         <Header />
-        <br />
+        {/* <br /> */}
+        <p className="infoText">Discover a collection of traditional and digital artworks here.</p>
         <FilterBar
           selectedFilter={selectedFilter}
           handleFilterClick={handleFilterClick}
         />
-
+        <br/>
         <ArtworkList filteredPics={filteredPics} />
       </Container>
     </>

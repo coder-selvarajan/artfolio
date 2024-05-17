@@ -14,7 +14,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { blue, grey, indigo } from "@material-ui/core/colors";
 import Link from "@material-ui/core/Link";
-import PanToolIcon from "@material-ui/icons/PanTool";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import PersonIcon from '@material-ui/icons/Person';
 

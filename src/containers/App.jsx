@@ -27,7 +27,7 @@ function App() {
       <Container maxWidth='lg' className='container'>
         <Header />
         {/* <br /> */}
-        <p className="infoText">Discover a collection of traditional and digital artworks here.</p>
+        <p className="infoText">Showcase of diverse artworks in traditional and digital mediums..</p>
         <FilterBar
           selectedFilter={selectedFilter}
           handleFilterClick={handleFilterClick}

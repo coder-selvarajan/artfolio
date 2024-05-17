@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const notMobile = useMediaQuery("(min-width:600px)");
   const classes = useStyles();
-  const title = " Selvarajan.in";
+  const title = " Selvarajan's Artfolio";
 
   return (
     <Toolbar className={classes.toolbar}>
@@ -29,8 +29,8 @@ const Header = () => {
         alt=''
       />
       <Typography
-        component='h2'
-        variant={`${notMobile ? "h4" : "h4"}`}
+        component='h4'
+        variant={`${notMobile ? "h5" : "h5"}`}
         color='inherit'
         align='left'
         noWrap

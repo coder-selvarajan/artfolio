@@ -13,7 +13,7 @@ const Artwork = (props) => {
         className={`handIcon`}
         alt={item.title}
         loading='lazy'
-        width='100%'
+        width='99%'
         height='100%'
         onLoad={() => setloaded(true)}
         onClick={() => onClickEvent(item)}

@@ -16,6 +16,7 @@ import { blue, grey, indigo } from "@material-ui/core/colors";
 import Link from "@material-ui/core/Link";
 import PanToolIcon from "@material-ui/icons/PanTool";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import PersonIcon from '@material-ui/icons/Person';
 
 export default function BasicPopover() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -33,15 +34,29 @@ export default function BasicPopover() {
   const id = open ? "simple-popover" : undefined;
 
   return (
-    <div>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
       <Button
         aria-describedby={id}
         variant='text'
         style={{ color: "grey", fontSize: 12 }}
         onClick={handleClick}>
-        <PanToolIcon sx={{ fontSize: 20, color: blue["400"] }} />
-        &nbsp;&nbsp; {notMobile ? "About Me | Connect" : "About Me"}
+        <PersonIcon sx={{ fontSize: 25, color: grey["400"] }} />
+        
+        &nbsp;&nbsp; {notMobile ? "Who I Am" : "Me"}
       </Button>
+     
+     <span> &nbsp;  &nbsp; </span>
+
+        <Link
+          href='https://instagram.com/selvarajan.t'
+          target='_blank'
+          title='Instagram'
+          color='inherit'>
+          <InstagramIcon style={{ color: "e4405f", fontSize: 30 }} />
+        </Link>
+        
+      
+      
 
       <Popover
         id={id}
@@ -70,7 +85,7 @@ export default function BasicPopover() {
                 Selvarajan Thangavel
               </Typography>
               <Typography variant='body2' color='text.secondary'>
-                Self-taught Artist | Techie | Spiritual Seeker
+                I am a self-taught artist by passion, an app developer by profession, and a spiritual seeker by instinct.
               </Typography>
             </CardContent>
             <CardActions>

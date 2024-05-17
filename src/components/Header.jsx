@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
-import Typography from "@material-ui/core/Typography";
+import { Typography, Box } from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
 import stlogo from "../assets/st-logo.png";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const notMobile = useMediaQuery("(min-width:600px)");
   const classes = useStyles();
-  const title = " Selvarajan's Artfolio";
 
   return (
     <Toolbar className={classes.toolbar}>
@@ -30,13 +29,15 @@ const Header = () => {
       />
       <Typography
         component='h4'
-        variant={`${notMobile ? "h5" : "h5"}`}
+        variant={`${notMobile ? "h4" : "h5"}`}
         color='inherit'
         align='left'
         noWrap
         className='toolbarTitle'>
-        {title}
+        {notMobile ? "Selvarajan Artfolio" : "ST Artfolio"}
       </Typography>
+      
+      
       <AboutMe />
       {/* {notMobile && (
         <>

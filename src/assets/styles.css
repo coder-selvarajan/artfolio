@@ -48,7 +48,8 @@ body {
 .toolbarTitle {
   flex: 1;
   font-family: "Josefin Slab", serif !important;
-  font-weight: 900 !important;
+  /* font-weight: 900 !important; */
+  font-weight: bolder !important;
   /* background-color: aqua; */
   /* font-family: "Waiting for the Sunrise", cursive !important; */
   /* font-family: "Caveat", cursive !important; */

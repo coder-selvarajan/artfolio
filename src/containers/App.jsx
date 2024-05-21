@@ -22,16 +22,28 @@ function App() {
     );
   };
 
+  const styles = {
+    centerContent: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+    },
+  };
+
   return (
     <>
       <Container maxWidth='lg' className='container'>
         <Header />
         {/* <br /> */}
-        <p className="infoText">Showcase of diverse artworks in traditional and digital mediums..</p>
+        {/* <p className="infoText" style={styles.centerContent}>Showcase of diverse artworks in traditional and digital mediums..</p> */}
+        <p className="infoText" style={styles.centerContent}>Filter by Medium: </p>
+        <div style={styles.centerContent}>
         <FilterBar
           selectedFilter={selectedFilter}
           handleFilterClick={handleFilterClick}
         />
+        </div>
         <br/>
         <ArtworkList filteredPics={filteredPics} />
       </Container>

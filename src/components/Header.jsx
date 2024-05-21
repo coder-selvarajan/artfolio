@@ -29,7 +29,7 @@ const Header = () => {
       />
       <Typography
         component='h4'
-        variant={`${notMobile ? "h4" : "h5"}`}
+        variant={`${notMobile ? "h5" : "h5"}`}
         color='inherit'
         align='left'
         noWrap

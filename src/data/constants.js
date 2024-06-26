@@ -10,7 +10,7 @@ export const categories = [
   // { title: "Soft-Pastel", key: "softpastel" },
   // { title: "Charcoal", key: "charcoal" },
   // { title: "Pen", key: "pen" },
-  { title: "Others", key: "others" },
+  // { title: "Others", key: "others" },
   { title: "All", key: "all" },
 ];
 
@@ -436,22 +436,6 @@ export const picsDB = [
     mode: "portrait",
   },
   {
-    img: "21-pen-monk.jpg",
-    title: "Monk",
-    medium: "Pen",
-    category: ["pen", "others"],
-    year: 2021,
-    mode: "landscape",
-  },
-  {
-    img: "21-pen-lotus.jpg",
-    title: "Lotus",
-    medium: "Pen",
-    category: ["pen", "others"],
-    year: 2021,
-    mode: "portrait",
-  },
-  {
     img: "21-pencil-portrait4.jpg",
     title: "Bhagat Singh",
     medium: "Graphite Pencil",
@@ -506,14 +490,6 @@ export const picsDB = [
     title: "Home",
     medium: "Graphite Pencil",
     category: ["pencil"],
-    year: 2021,
-    mode: "portrait",
-  },
-  {
-    img: "20-coffee-landscape.jpg",
-    title: "Landscape (coffee painting)",
-    medium: "Coffee-powder, Water",
-    category: ["coffee", "others"],
     year: 2021,
     mode: "portrait",
   },
@@ -589,14 +565,6 @@ export const picsDB = [
     category: ["colorpencil", "featured"],
     year: 2021,
     mode: "portrait",
-  },
-  {
-    img: "15-softpastel-pot.jpg",
-    title: "Pot (with soft-pastel)",
-    medium: "Soft Pastel",
-    category: ["softpastel", "others"],
-    year: 2021,
-    mode: "landscape",
   },
   {
     img: "15-pencil-stilllife-book.jpg",
